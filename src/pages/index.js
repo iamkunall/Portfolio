@@ -12,6 +12,9 @@ import Img from 'gatsby-image';
 import { graphql } from 'gatsby';
 import { darken } from 'polished';
 
+import FirstProject from '../images/firstproject.jpg';
+import SecondProject from '../images/secondproject.png';
+
 const AboveFold = styled.div`
   ${Mixins.aboveFoldMixin}
   padding: 140px 0 60px 0;
@@ -146,10 +149,11 @@ class Homepage extends React.Component {
           <AboveFold>
             <Img fluid={data.avatarHomepage.childImageSharp.fluid} alt="Name Surname" className="avatar" />
             <t.H1 primary align="center">
-              Name Surname
+              Kunal Sharma
             </t.H1>
             <t.LargeP align="center" max45>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Student,Developer, passionate about what I do. Always interested in how the sites were made, I started to
+              study HTML by hobby.
             </t.LargeP>
             <HireMe large onClick={this.openContactPopup} book>
               Hire me
@@ -157,11 +161,9 @@ class Homepage extends React.Component {
           </AboveFold>
           <Content>
             <t.H2 primary align="center" bold>
-              Lorem ipsum
+              I am currently working as a frontend developer and mainly work with Javascript,React,Graphql,Gatsby,Next
+              js,Contentful CMS, and Sanity CMS .
             </t.H2>
-            <t.P align="center" max70 className="who-desc">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </t.P>
             <t.H2 primary align="center" bold className="portfolio">
               Portfolio
             </t.H2>
@@ -169,16 +171,28 @@ class Homepage extends React.Component {
           <Block>
             <BlockContent>
               <DivWrapper>
-                <ItemImage src={Placeholder} alt="Placeholder title" />
+                <ItemImage src={FirstProject} alt="Placeholder title" />
               </DivWrapper>
               <DivWrapper>
-                <t.H2 bold>Placeholder website</t.H2>
-                <t.P>Lorem ipsum</t.P>
-                <t.P>Dolor sit amet</t.P>
-                <LinkButton primary bold className="link" as="a"
+                <t.H2 bold>University website</t.H2>
+                <t.P>
+                  I made this University website design using the html Framework bulma,react FrameWork Gatsby, Styled
+                  Components and it is link with the contentful CMS. I make this website just to enhance my skills in
+                  HTML and Gatsby{' '}
+                </t.P>
+                <LinkButton
+                  primary
+                  bold
+                  className="link"
+                  as="a"
                   target="_blank"
-                  href="#">
-                  Lorem ipsum
+                  href="https://github.com/iamkunall/gatsby-first-project"
+                >
+                  <t.P>https://github.com/iamkunall/gatsby-first-project</t.P>
+                </LinkButton>
+
+                <LinkButton primary bold className="link" as="a" target="_blank" href="https://eduction.netlify.com/">
+                  DEMO
                 </LinkButton>
               </DivWrapper>
             </BlockContent>
@@ -186,59 +200,43 @@ class Homepage extends React.Component {
           <Block>
             <BlockContent>
               <DivWrapper>
-                <t.H2 bold>Placeholder website</t.H2>
-                <t.P>Lorem ipsum</t.P>
-                <t.P>Dolor sit amet</t.P>
-                <LinkButton primary bold className="link" as="a"
+                <t.H2 bold>BlockChain Website Design</t.H2>
+                <t.P>
+                  This project is made by me as my collage project under my summer training. In this project i am using
+                  Bulma as HTML Framework and Nextjs as react FrameWork. This is Three Page Website having A landing
+                  Page, Signup page and Login Page
+                </t.P>
+                <LinkButton
+                  primary
+                  bold
+                  className="link"
+                  as="a"
                   target="_blank"
-                  href="#">
-                  Lorem ipsum
+                  href="https://github.com/iamkunall/Blockchain"
+                >
+                  <t.P>https://github.com/iamkunall/Blockchain</t.P>
+                </LinkButton>
+
+                <LinkButton
+                  primary
+                  bold
+                  className="link"
+                  as="a"
+                  target="_blank"
+                  href="https://blockchain.kunalsharma.now.sh/"
+                >
+                  DEMO
                 </LinkButton>
               </DivWrapper>
               <DivWrapper>
-                <ItemImage src={Placeholder} alt="Placeholder title" />
+                <ItemImage src={SecondProject} alt="Placeholder title" />
               </DivWrapper>
             </BlockContent>
           </Block>
-          <Block>
-            <BlockContent>
-              <DivWrapper>
-                <ItemImage src={Placeholder} alt="Placeholder title" />
-              </DivWrapper>
-              <DivWrapper>
-                <t.H2 bold>Placeholder website</t.H2>
-                <t.P>Lorem ipsum</t.P>
-                <t.P>Dolor sit amet</t.P>
-                <LinkButton primary bold className="link" as="a"
-                  target="_blank"
-                  href="#">
-                  Lorem ipsum
-                </LinkButton>
-              </DivWrapper>
-            </BlockContent>
-          </Block>
-          <Block>
-            <BlockContent>
-              <DivWrapper>
-                <t.H2 bold>Placeholder website</t.H2>
-                <t.P>Lorem ipsum</t.P>
-                <t.P>Dolor sit amet</t.P>
-                <LinkButton primary bold className="link" as="a"
-                  target="_blank"
-                  href="#">
-                  Lorem ipsum
-                </LinkButton>
-              </DivWrapper>
-              <DivWrapper>
-                <ItemImage src={Placeholder} alt="Placeholder title" />
-              </DivWrapper>
-            </BlockContent>
-          </Block>
+
           <WorkWithMe>
             <t.H1 green>Get in touch with me</t.H1>
-            <t.LargeP>
-              Fancy working with me? Contact me for more info!{' '}
-            </t.LargeP>
+            <t.LargeP>Fancy working with me? Contact me for more info! </t.LargeP>
             <HireMe onClick={this.openContactPopup} book>
               Contact me
             </HireMe>

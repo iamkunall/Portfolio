@@ -84,10 +84,13 @@ class AboutMe extends React.Component {
         <Layout theme="white" openContactPopup={this.openContactPopup}>
           <AboveFold>
             <t.H1 green align="center">
-              Name Surname - Lorem ipsum
+              Kunal Sharma
             </t.H1>
             <t.LargeP align="center" max70>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Currently, i am a student of B-tech computer science at St. Soldier Institute of Engineering and
+              Technology, Jalandhar. I love to learn new technology and work on them. I started to study HTML by hobby
+              then i learn python, javascript to enhance my skills. Nowadays i am working on javascript libraries and
+              learning advance javascript and node js
             </t.LargeP>
           </AboveFold>
           <Content>

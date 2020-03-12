@@ -4,6 +4,8 @@ import { lighten, darken } from 'polished';
 import * as t from '../Typography';
 import Colors from '../Colors';
 import LN from '../images/ln.png';
+import Gmail from '../images/gmail.jpg';
+import Twitter from '../images/twitter.png';
 import Close from '../images/close-popup-grey.png';
 import { media } from '../MediaQueries';
 import Helmet from 'react-helmet';
@@ -31,7 +33,6 @@ const HireMePopupWrapper = styled.div`
 
 const Link = styled.a`
   font-size: 18px;
-  padding: 16px 50px;
 `;
 
 const ContentWrapper = styled.div`
@@ -59,10 +60,7 @@ const Burger = styled.div`
   z-index: 2;
   color: ${props => props.scrolled && Colors.darkest};
   &:hover {
-    ${props =>
-      props.scrolled || props.theme === 'white'
-        ? lighten(0.3, Colors.darkest)
-        : darken(0.1, Colors.white)};
+    ${props => (props.scrolled || props.theme === 'white' ? lighten(0.3, Colors.darkest) : darken(0.1, Colors.white))};
     cursor: pointer;
     opacity: 0.9;
   }
@@ -90,9 +88,14 @@ class HireMePopup extends React.Component {
             <img alt="Close popup" src={Close} />
           </Burger>
           <t.H3>Contact me on</t.H3>
-          <Link primary bold
-            target="_blank"
-            href="https://www.linkedin.com/">
+
+          <Link primary bold target="_blank" href="mailto:103kunalsharma@gmail.com">
+            <img src={Gmail} alt="Gmail" />
+          </Link>
+          <Link primary bold target="_blank" href="https://twitter.com/Ask_kunal">
+            <img src={Twitter} alt="Twitter" />
+          </Link>
+          <Link primary bold target="_blank" href="https://www.linkedin.com/in/kunal-sharma-99961a148/">
             <img src={LN} alt="Your Linkedin profile" />
           </Link>
         </ContentWrapper>
