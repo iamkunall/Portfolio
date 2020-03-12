@@ -3,17 +3,15 @@ import styled from 'styled-components';
 import * as Mixins from '../Mixins';
 import * as t from '../Typography';
 import Layout, { Content } from '../components/Layout';
-import Placeholder from '../images/placeholder.png';
 import { HireMe, LinkButton } from '../components/Button.js';
+import FirstProject from '../images/firstproject.jpg';
+import SecondProject from '../images/secondproject.png';
 import HireMePopup from '../components/HireMePopup.js';
 import { media } from '../MediaQueries';
 import Colors from '../Colors';
 import Img from 'gatsby-image';
 import { graphql } from 'gatsby';
 import { darken } from 'polished';
-
-import FirstProject from '../images/firstproject.jpg';
-import SecondProject from '../images/secondproject.png';
 
 const AboveFold = styled.div`
   ${Mixins.aboveFoldMixin}
